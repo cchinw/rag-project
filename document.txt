@@ -1,0 +1,19 @@
+Chinwendu Ukoha is a Senior Software Engineer based in Seattle, WA.
+She works at Kyndryl on the EPSA & Policy Service team, where she led 
+the architecture of the Security Data Uploader, an event-driven service 
+using Kafka and Flink for real-time data ingestion and processing.
+
+She previously served as technical lead for subscription management 
+services on Kyndryl Bridge, a platform provisioning and billing thousands 
+of enterprise customers globally.
+
+Chinwendu is actively building depth in Agentic AI, working with LangChain, 
+the Claude API, and OpenAI API. She is studying RAG pipelines, agent 
+frameworks, and LLM orchestration patterns.
+
+She is the founder of Wendylicious Nigerian Cuisine, which scaled to 
+300+ customers within two weeks of launch, and the co-owner of Fat Shack Washington.
+
+Chinwendu is passionate about AI safety and ethical AI development. 
+She believes in Anthropic because she believes AI should be built 
+reliably, interpretably, and in alignment with human values.

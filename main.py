@@ -1,21 +1,32 @@
 import os
 from dotenv import load_dotenv
-import anthropic
+from langchain_community.document_loaders import TextLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-
-#Load env variables from .env
+#Load environment variables
 load_dotenv()
 
-#Init Anthropic Client
-client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+#Step 1: Load the doc
+loader = TextLoader("document.txt")
+documents = loader.load()
 
-#send a smple test message
-message = client.messages.create(
-  model="claude-opus-4-5",
-  max_tokens=1024,
-  messages=[
-    {"role": "user", "content": "Say hello and confirm you are working."}
-  ]
+print(f"loaded {len(documents)} documents(s)")
+print(f"Document length: {len(documents[0].page_content)} characters")
+print("---")
+
+#Step 2: Split into chunks
+splitter = RecursiveCharacterTextSplitter(
+  chunk_size=200,
+  chunk_overlap=20
 )
 
-print(message.content[0].text)
+chunks = splitter.split_documents(documents)
+
+print(f"Split into {len(chunks)} chunks")
+print("---")
+
+# Step 3: Prit each chunk so we can see what happened
+for i, chunk in enumerate(chunks):
+  print(f"Chunk {i+ 1}:")
+  print(chunk.page_content)
+  print("---")
