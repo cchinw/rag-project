@@ -42,7 +42,7 @@ print("Claude Ready")
 #Step 4 create the RAG Chain
 def ask(question):
   #Retrieval relevant chunks
-  results = vectorstore.similarity_search(question, k=3)
+  results = vectorstore.similarity_search(question, k=5)
 
   # Build context from chunks
   context = "\n\n".join([r.page_content for r in results])

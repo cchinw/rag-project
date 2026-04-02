@@ -11,8 +11,8 @@ Chinwendu is actively building depth in Agentic AI, working with LangChain,
 the Claude API, and OpenAI API. She is studying RAG pipelines, agent 
 frameworks, and LLM orchestration patterns.
 
-She is the founder of Wendylicious Nigerian Cuisine, which scaled to 
-300+ customers within two weeks of launch, and the co-owner of Fat Shack Washington.
+She founded Wendylicious Nigerian Cuisine, which scaled to 
+300+ customers within two weeks of launch, and is the co-owner of Fat Shack Washington.
 
 Chinwendu is passionate about AI safety and ethical AI development. 
 She believes in Anthropic because she believes AI should be built 
