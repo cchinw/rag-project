@@ -6,6 +6,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import HumanMessage, SystemMessage
+
 load_dotenv()
 
 #Step 1: Load and chunk the doc
